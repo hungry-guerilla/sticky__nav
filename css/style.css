@@ -18,6 +18,77 @@ body {
 }
 
 /*@todo Nav*/
+.nav {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+.nav .container a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+.nav.active a {
+  color: black;
+}
+
+.nav.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
 .hero {
   background-image: url("https://wallpapercave.com/wp/wp1887594.jpg");
   height: 100vh;
